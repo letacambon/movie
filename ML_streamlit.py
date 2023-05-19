@@ -9,7 +9,7 @@ from sklearn.neighbors import NearestNeighbors
 import streamlit as st
 import sklearn
 
-df_main = pd.read_csv("movie_learn.csv", sep=",", low_memory=False)
+df_main = pd.read_csv('movie_learn.csv', sep=",", low_memory=False)
 movie_learn = df_main.copy()
 
 # On va définir y ici comme la colonne 'title'
