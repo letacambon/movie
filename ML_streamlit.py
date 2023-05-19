@@ -7,6 +7,8 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
 import streamlit as st
+import sklearn
+
 df_main = pd.read_csv(r"C:\Formation\projet_2\fiches_csv\movie_learn.csv", sep=",", low_memory=False)
 movie_learn = df_main.copy()
 
@@ -54,3 +56,5 @@ if film:
             st.write(f"\nRecommandations pour le film :")
             for film in closest_film.tolist()[1:]:
                 st.write("- " + film)
+
+
